@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    <title>Title</title>
+</head>
+<body style="margin: 22px 100px;">
+
+<form>
+    <h1>Update job</h1>
+</form>
+
+<header th:insert="template.html :: topmenu"></header>
+
+<form style="padding: 25px 0;"
+      th:object="${jobUpdate}" method="POST">
+    <label for="name">employer id : </label><br>
+    <input type="text" id="name" name="emp_id" th:field="*{emp_id}">
+    <br>
+    <label for="logo">title : </label><br>
+    <input type="text" id="logo" name="title" th:field="*{title}">
+    <br>
+    <label for="web">description : </label><br>
+    <input type="text" id="web" name="description" th:field="*{description}">
+    <br>
+    <!--    -->
+    <label for="location">Location : </label> <br>
+    <select id="location">
+        <option th:each="state : ${jobCity}"
+                th:value="${state}"
+                th:text="${state.label}" th:field="*{city}">
+        </option>
+    </select>
+    <!---->
+    <br>
+    <!--    <label for="update">update at : </label><br>-->
+    <!--    <input type="datetime-local" id="update" name="update" th:field="*{updated_at}">-->
+    <!--    <br>-->
+        <label for="create">creaate at : </label><br>
+        <input type="datetime-local" id="create" name="create" th:field="*{created_at}">
+        <br>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="reset" class="btn btn-danger">Reset</button>
+
+</form>
+
+</body>
+</html>

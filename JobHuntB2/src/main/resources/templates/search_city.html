@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>city</title>
+</head>
+<body>
+<br>
+<h1>choose city</h1><br>
+
+<span th:each="travel_type:${travelTypes}">
+    <input type="checkbox" name="travelType"
+           th:value="${travel_type}" >
+    <label th:text="${travel_type.value}" for="travelType"></label><br>
+  </span>
+
+</body>
+</html>

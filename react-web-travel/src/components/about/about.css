@@ -1,0 +1,92 @@
+.about_vn{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_container{
+display: grid;
+grid-template-columns: 35% 50%;
+gap: 15%;
+}
+
+.about_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap : 1.5rem;
+}
+
+.about_card{
+transition: var(--transition);
+    background: var(--color-primary);
+    border: 1px solid transparent;
+    border-radius:1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about_card:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+    cursor: default;
+}
+
+.about_content p {
+    margin: 2rem 0 2.6rem;
+    color: var(--color-primary);
+}
+
+.about_content p i {
+    color: var(--color-white);
+    font-size: 30px;
+}
+
+/* -------------------- MEDIA ---------------------------- */
+
+@media screen and (max-width: 1024px) {
+    .about_container{
+        grid-template-columns:repeat(1, 2fr);
+        gap: 2rem;
+    }
+
+    .about_vn{
+        width: 85%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about_content p {
+        margin: 1rem 0 1.5rem;
+}
+    .about_image {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* -------------------- SAMLL---------------------------- */
+
+@media screen and (max-width:600px) {
+    .about_vn{
+        width: 65%;
+        margin: 0 auto 3rem;
+
+        font-size: 14px;
+    }
+
+    .about_cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .about_content{
+        margin: 0 0.5rem;
+    }
+
+    .about_content p {
+        margin: 1.5rem 0;
+    }
+
+    .about_image{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,61 @@
+.portfolio_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.5rem;
+}
+
+.portfolio_items {
+    background: #cfe1b9;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    height: 20rem;
+}
+
+.portfolio_items:hover {
+    border-color: var(--color-primary);
+    background: transparent;
+}
+
+.portfolio_items_img {
+    height: 60%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolio_items h3 {
+    margin: 1rem 0 1rem;
+}
+
+.portfolio_item-cta {
+    margin-bottom: 0.5rem;
+}
+
+.portfolio_item-cta:hover {
+    background: #cfe1b9;
+}
+
+
+/* -------------------- MEDIA ---------------------------- */
+
+@media screen and (max-width: 1024px) {
+    .portfolio_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+
+/* -------------------- SAMLL---------------------------- */
+
+@media screen and (max-width:600px) {
+    .portfolio_container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 4rem 5rem;
+    }
+    .portfolio_items h3 {
+        margin: 0rem 0 1rem;
+    }
+}

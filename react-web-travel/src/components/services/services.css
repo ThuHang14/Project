@@ -1,0 +1,93 @@
+.services_container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 3rem;
+}
+
+.service{
+    background: #b5c99a;
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid var(--color-primary);
+    height: fit-content;
+    transition: var(--transition);
+    color: var(--color-primary-variant);
+}
+
+.service:hover{
+    background: transparent;
+    border-color:var(--color-bg-variant);
+    cursor: default;
+    
+}
+
+
+
+.service_head{
+    background:var(--color-primary);
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.service_head h3{
+    font-size: 1.2rem;
+    text-align: center;
+    color: var( --color-primary-variant);
+}
+
+.serve_list{
+    padding: 2rem;
+}
+
+.serve_list li{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* -------------------- MEDIA ---------------------------- */
+
+@media screen and (max-width: 1024px) {
+    .services_container {
+        display: list-item;
+    font-size: smaller;
+    padding: 1rem;
+    }
+    .service{
+        margin: 0 3rem 3rem;
+    }
+}
+
+
+/* -------------------- SAMLL---------------------------- */
+
+@media screen and (min-width:1024px) {
+    .service_head:hover {
+        color: #b5c99a00;
+        background: transparent;
+    }
+    
+    .bac:hover{
+        background-image:url(../../assets/bac.jpg);
+         color: #b5c99a00;
+        background-position: center;
+        background-size: 30%;
+        /* background-repeat: no-repeat; */
+    }
+    
+    .trung:hover{
+        background-image:url(../../assets/trung.jpg);
+         color: #b5c99a00;
+        background-position: center;
+        background-size: 30%;
+        /* background-repeat: no-repeat; */
+    }
+    
+    .nam:hover{
+        background-image:url(../../assets/nam.jpg);
+        color: #b5c99a00;
+       background-position: center;
+       background-size: 30%;
+       /* background-repeat: no-repeat; */
+    }
+}

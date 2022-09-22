@@ -1,0 +1,44 @@
+.container.testimonials_container {
+    width: 40%;
+    padding-bottom: 0.5rem;
+    padding: 0 2%;
+}
+
+.client_avatar {
+    width: 10rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.3rem solid var(--color-primary-variant);
+}
+
+.testimonial {
+    background: #cfe1b9;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--color-primary-variant);
+}
+
+
+/* -------------------- MEDIA ---------------------------- */
+
+@media screen and (max-width: 1024px) {
+    .container.testimonials_container {
+        width: 60%;
+    }
+}
+
+
+/* -------------------- SAMLL---------------------------- */
+
+@media screen and (max-width:600px) {
+    .container.testimonials_container {
+        width: var(--container-width-sm);
+    }
+}
