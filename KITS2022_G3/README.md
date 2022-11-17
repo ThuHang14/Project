@@ -1,7 +1,8 @@
 
 # Slider G3Mart
 https://docs.google.com/presentation/d/1ma5dERY9MIWQXdC5Gz_fOwDwqzyflwSdOmtxdxojzz4/edit?usp=sharing  
-
+# Video
+https://youtu.be/MB_KJibwMi4
 # Web  
 - admin : user4@gmail.com / pass : 123  
 - customer : user1@gmail.com / pass 123
