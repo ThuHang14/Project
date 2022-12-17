@@ -1,4 +1,6 @@
 
+![image](https://user-images.githubusercontent.com/96046778/208241738-be3b2eb8-1b36-4d63-b3cd-c7fdf89f1a96.png)
+
 # Slider G3Mart
 https://docs.google.com/presentation/d/1ma5dERY9MIWQXdC5Gz_fOwDwqzyflwSdOmtxdxojzz4/edit?usp=sharing  
 # Video
